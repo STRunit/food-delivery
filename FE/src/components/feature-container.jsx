@@ -7,10 +7,9 @@ export const FeatureContainer = () => {
             FEATURE_ITEMS.map((item) => {
                 return <Feature
                     key={item.label}
-                    children={item.icon}
                     label={item.label}
                     content={item.content}
-                />
+                >{item.icon}</Feature>
             })
         }
     </div>

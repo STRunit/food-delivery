@@ -111,11 +111,12 @@ export const CreateFood = () => {
                             /> : <CustomLabel className="text-center text-[#525252] text-base">Add image for the food</CustomLabel>
                             }
                             <CldUploadButton
-                                children={"Add Image"}
                                 className={imageUrl ? "hidden" : "bg-[#393939] text-[#FFFFFF] font-bold h-9 rounded-md px-4 py-[10px] items-center flex"}
                                 uploadPreset="food-delivery-images"
                                 onSuccess={(response) => setImageUrl(response.info.url)}
-                            />
+                            >
+                                Add Image
+                            </CldUploadButton>
                         </div>
                     </div>
                 </CustomDialogBody>

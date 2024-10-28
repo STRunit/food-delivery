@@ -13,7 +13,7 @@ const PasswordRecoveryPage = () => {
 
     useEffect(() => {
         router.push('/password-recovery?step=1');
-    }, []);
+    }, [router]);
 
     return <div className="flex justify-center">
         {Number(step) === 1 && <RecoveryEmail />}
