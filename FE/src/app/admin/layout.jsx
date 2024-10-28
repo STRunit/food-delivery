@@ -6,8 +6,8 @@ const AdminLayout = ({ children }) => {
         <section className="flex gap-6 max-w-[1258px] bg-gray-100 m-auto">
             <Suspense>
                 <Sidebar />
-                {children}
             </Suspense>
+            {children}
         </section>
     );
 }
